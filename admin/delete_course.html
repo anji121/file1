@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Course</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="top-nav-left">
+                <img class="header-logo" src="../images/download.png" name="logo" alt="logo" />
+                <h2 style="text-align: left">Skillify Canvas</h2>
+            </div>
+        </div>
+
+        <div class="body-layout">
+            <div class="vertical-menu">
+                <!-- Your menu items here -->
+                <div class="menu-item">
+                    <div class="menu-title"><a href="admin_profile.html">Home</a></div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title"><a href="editprofile1.html">Edit profile</a></div>
+                </div>
+                <div class="courses-item">
+                    <div class="menu-title">Courses</div>
+                    <div class="courses-dropdown">
+                        <a href="manage_course.html">Create new course</a>
+                        <a href="updatecourse.html">Update course</a>
+                        <a href="delete_course.html">Delete course</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title"><a href="notification.html">Broadcast message</a></div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title"><a href="inbox.html">Inbox</a></div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-title"><a href="courses.html">Courses overview</a></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <h1>Delete Existing Course</h1>
+                    <form action="" method="GET">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="term">Select Term</label>
+                            </div>
+                            <div class="col-75">
+                                <select name="terms" id="">
+                                    <option value="">Fall 2023</option>
+                                    <option value="">Spring 2024</option>
+                                    <option value="">Summer 2024</option>
+                                    <option value="">Fall 2024</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="program">Select Program</label>
+                            </div>
+                            <div class="col-75">
+                                <select name="programs" id="">
+                                    <option value="">Computer science</option>
+                                    <option value="">Psychology</option>
+                                    <option value="">Accounting</option>
+                                    <option value="">Construction engineering</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="course-title">Course Title</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="coursetitle" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="course-name">Course name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="coursename" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="section">Section</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="section" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="date">From-To Dates</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" name="fromdate" id="fromdate" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25"></div>
+                            <div class="col-75">
+                                <input type="date" name="todate" id="todate" />
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="location">Location</label>
+                            </div>
+                            <div class="col-75">
+                                <select name="location">
+                                    <option value="">--Select--</option>
+                                    <option value="">SYNCONLINE</option>
+                                    <option value="">ON CAMPUS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="room">ClassRoom</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="room" id="room" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="occupancy">Occupancy</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="occupancy" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25"></div>
+                            <div class="col-75">
+                                <button type="submit" class="button">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 Skillify</p>
+        </div>
+
+        
+    
+        <!-- Chat Widget Button -->
+        <div class="chat-widget-button" id="chat-widget-button">
+            <img src="chat-icon.png" alt="chat" />
+        </div>
+    
+        <!-- Chat Widget -->
+        <div class="chat-widget" id="chat-widget">
+            <div class="chat-header">
+                <h2>Welcome to Chat</h2>
+                <span class="close-button" id="close-chat">✖</span>
+            </div>
+            
+            <div class="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    
+        <!-- Add your chat JavaScript file here -->
+        <script src="CSS/chat.js"></script>
+    </div>
+</body>
+</html>

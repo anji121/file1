@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+ <body>
+    <header>
+        <div class="header">
+            <div class="top-nav-left">
+                <img class="header-logo" src="../images/download.png" name="logo" alt="logo" />
+                <h2 style="text-align: left">Skillify Canvas</h2>
+            </div>
+        </div>
+        <h1>Welcome </h1>
+        <nav>
+            <ul>
+                <li><a href="admin_profile.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        /* Add your styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .message.sender {
+            background-color: #e0f7fa;
+        }
+
+        .message.receiver {
+            background-color: #c8e6c9;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .message-sender {
+            font-weight: bold;
+        }
+
+        .message-date {
+            color: #888;
+        }
+
+        .message-text {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inbox</h1>
+        <!-- Sample messages, you can populate this section with actual messages -->
+        <div class="message sender">
+            <div class="message-header">
+                <span class="message-sender">QA Officer</span>
+                <span class="message-date">2 hours ago</span>
+            </div>
+            <div class="message-text">
+                Hello, we have an upcoming QA meeting.
+            </div>
+        </div>
+
+        <div class="message receiver">
+            <div class="message-header">
+                <span class="message-sender">Instructor</span>
+                <span class="message-date">1 day ago</span>
+            </div>
+            <div class="message-text">
+                Hi, don't forget to prepare for the upcoming lecture.
+            </div>
+        </div>
+
+        <div class="message sender">
+            <div class="message-header">
+                <span class="message-sender">Student</span>
+                <span class="message-date">3 days ago</span>
+            </div>
+            <div class="message-text">
+                I have a question regarding the assignment.
+            </div>
+        </div>
+        <!-- End of sample messages -->
+
+        <!-- You can dynamically add messages to this section using JavaScript -->
+    </div>
+
+     <!-- Chat Widget Button -->
+     <div class="chat-widget-button" id="chat-widget-button">
+        <img src="chat-icon.png" alt="chat" />
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <h2>Welcome to Chat</h2>
+            <span class="close-button" id="close-chat">✖</span>
+        </div>
+        
+        <div class="chat-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- Add your chat JavaScript file here -->
+    <script src="CSS/chat.js"></script>
+</div>
+</body>
+</html>

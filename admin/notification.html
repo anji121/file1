@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        
+    </div>
+    <link rel="stylesheet" href="CSS/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="top-nav-left">
+                <img class="header-logo" src="../images/download.png" name="logo" alt="logo" />
+                <h2 style="text-align: left">Skillify Canvas</h2>
+            </div>
+        </div>
+        <h1>Welcome, [Administrator Name]</h1>
+        <nav>
+            <ul>
+                <li><a href="admin_profile.html">Home</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <title>Broadcast Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        select, textarea {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Broadcast Messages</h1>
+        <form id="broadcast-form">
+            <label for="recipient">Select Recipient:</label>
+            <select id="recipient" name="recipient">
+                <option value="qa_officers">QA Officers</option>
+                <option value="instructors">Instructors</option>
+                <option value="students">Students</option>
+                <option value="coordinators">Coordinators</option>
+                <option value="admins">Admins</option>
+            </select>
+
+            <label for="message">Type Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const broadcastForm = document.getElementById("broadcast-form");
+            const messageInput = document.getElementById("message");
+            const recipientSelect = document.getElementById("recipient");
+
+            broadcastForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Get the selected recipient group
+                const selectedRecipient = recipientSelect.value;
+
+                // Get the message text
+                const message = messageInput.value;
+
+                // Check if a message is entered
+                if (message.trim() === "") {
+                    alert("Please enter a message.");
+                    return;
+                }
+
+                // Broadcast the message based on the selected recipient
+                switch (selectedRecipient) {
+                    case "qa_officers":
+                        broadcastToQAOfficers(message);
+                        break;
+                    case "instructors":
+                        broadcastToInstructors(message);
+                        break;
+                    case "students":
+                        broadcastToStudents(message);
+                        break;
+                    case "coordinators":
+                        broadcastToCoordinators(message);
+                        break;
+                    case "admins":
+                        broadcastToAdmins(message);
+                        break;
+                    default:
+                        alert("Invalid recipient selected.");
+                }
+
+                // Clear the message input
+                messageInput.value = "";
+            });
+
+            // Functions to broadcast messages to different recipient groups
+            function broadcastToQAOfficers(message) {
+                // Implement logic to send the message to QA Officers
+                // You can use AJAX or any other method to send the message to the server or users.
+                alert(`Broadcasted to QA Officers: ${message}`);
+            }
+
+            function broadcastToInstructors(message) {
+                // Implement logic to send the message to Instructors
+                alert(`Broadcasted to Instructors: ${message}`);
+            }
+
+            function broadcastToStudents(message) {
+                // Implement logic to send the message to Students
+                alert(`Broadcasted to Students: ${message}`);
+            }
+
+            function broadcastToCoordinators(message) {
+                // Implement logic to send the message to Coordinators
+                alert(`Broadcasted to Coordinators: ${message}`);
+            }
+
+            function broadcastToAdmins(message) {
+                // Implement logic to send the message to Admins
+                alert(`Broadcasted to Admins: ${message}`);
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

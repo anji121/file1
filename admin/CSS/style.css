@@ -1,0 +1,556 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set default font styles */
+body {
+    background-color: #747473;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #271846;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form textarea {
+        width: 100%;
+    }
+}
+/* Styles for the Create New Course page */
+
+/* Page container */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Page header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+/* Page content container */
+.body-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Vertical menu */
+.vertical-menu {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-title a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.menu-title a:hover {
+    text-decoration: underline;
+}
+
+.courses-dropdown a {
+    display: block;
+    margin-left: 15px;
+    padding: 5px 0;
+}
+
+/* Page content */
+.page-content {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.col-25 {
+    flex: 25%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Button */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Add specific class names to your HTML elements where necessary */
+/* Styles for the Manage Users page */
+
+/* Page container */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Page header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+/* Page content container */
+.body-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Vertical menu */
+.vertical-menu {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-title a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.menu-title a:hover {
+    text-decoration: underline;
+}
+
+/* Page content */
+.page-content {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.col-25 {
+    flex: 25%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Add specific class names to your HTML elements where necessary */
+
+
+/* Reset some default styles for the page */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the  customise page page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.body-layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-content {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* Existing styles for chat  web page */
+
+
+/* Chat Widget Button Styles */
+.chat-widget-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1b112b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9998;
+}
+
+/* Chat Widget Styles */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9998;
+}
+
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+}
+
+.chat-header h2 {
+    font-size: 16px;
+    margin: 0;
+}
+/* Style for the close button */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+input[type="text"] {
+    flex: 3; /* Increase the width of the text field */
+    padding: 10px;
+}
+
+/* Specific selector for the send button */
+.chat-input button#send-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: .010px .015px; /* Reduce the button width */
+    flex: 1;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Specific selector for the send button hover state */
+.chat-input button#send-button:hover {
+    background-color: #466;
+}
